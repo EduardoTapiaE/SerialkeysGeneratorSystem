@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30002.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerialkeysGeneratorSystem", "SerialkeysGeneratorSystem\SerialkeysGeneratorSystem.csproj", "{3ECE605E-98C2-4B0F-B3CF-363D894C0D1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SerialkeysGeneratorSystem", "SerialkeysGeneratorSystem\SerialkeysGeneratorSystem.csproj", "{3ECE605E-98C2-4B0F-B3CF-363D894C0D1E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{09960604-F881-400F-9436-B0BB112B7A5A} = {09960604-F881-400F-9436-B0BB112B7A5A}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeysLibrary", "KeysLibrary\KeysLibrary.csproj", "{09960604-F881-400F-9436-B0BB112B7A5A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +20,10 @@ Global
 		{3ECE605E-98C2-4B0F-B3CF-363D894C0D1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3ECE605E-98C2-4B0F-B3CF-363D894C0D1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3ECE605E-98C2-4B0F-B3CF-363D894C0D1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09960604-F881-400F-9436-B0BB112B7A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09960604-F881-400F-9436-B0BB112B7A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09960604-F881-400F-9436-B0BB112B7A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09960604-F881-400F-9436-B0BB112B7A5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

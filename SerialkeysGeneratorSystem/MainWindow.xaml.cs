@@ -1,5 +1,8 @@
-﻿using System;
+﻿using KeysLibrary.Services;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +26,24 @@ namespace SerialkeysGeneratorSystem
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void BtnGenerateKey_Click(object sender, RoutedEventArgs e)
+        {
+            IKeysServices keyService = new KeysServices();
+            string path = Directory.GetCurrentDirectory();
+            var public_key = keyService.GeneratePublicKey();
+
+            using (System.IO.StreamWriter file = new System.IO.StreamWriter(path+"\\clave.txt", false))
+            {
+                file.WriteLine(public_key);
+            }
+            var p = new Process();
+            p.StartInfo = new ProcessStartInfo(path + "\\clave.txt")
+            {
+                UseShellExecute = true
+            };
+            p.Start();
         }
     }
 }
