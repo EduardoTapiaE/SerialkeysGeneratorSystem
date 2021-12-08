@@ -8,7 +8,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SerialkeysGeneratorSystem",
 		{09960604-F881-400F-9436-B0BB112B7A5A} = {09960604-F881-400F-9436-B0BB112B7A5A}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeysLibrary", "KeysLibrary\KeysLibrary.csproj", "{09960604-F881-400F-9436-B0BB112B7A5A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KeysLibrary", "KeysLibrary\KeysLibrary.csproj", "{09960604-F881-400F-9436-B0BB112B7A5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoLibrary", "CryptoLibrary\CryptoLibrary.csproj", "{500ABCB7-E2AB-46E7-B04B-708648C81451}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +26,10 @@ Global
 		{09960604-F881-400F-9436-B0BB112B7A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09960604-F881-400F-9436-B0BB112B7A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09960604-F881-400F-9436-B0BB112B7A5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{500ABCB7-E2AB-46E7-B04B-708648C81451}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{500ABCB7-E2AB-46E7-B04B-708648C81451}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{500ABCB7-E2AB-46E7-B04B-708648C81451}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{500ABCB7-E2AB-46E7-B04B-708648C81451}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "2ijJwi2oC6Dn6e/SxePwNuBcwyZ+jPwgZ5VLIjJVUez1enAfWt9PhS0Dg9TbBz07gSxhwl2X1+GtZb1gFBcr2A==",
+  "success": true,
+  "projectFilePath": "C:\\Repositories\\SerialkeysGeneratorSystem\\CryptoLibrary\\CryptoLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Eduardo\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Eduardo\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

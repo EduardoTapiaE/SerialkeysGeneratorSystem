@@ -5,9 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SerialkeysGeneratorSystem"
         mc:Ignorable="d"
-        Title="MainWindow" Height="376" Width="698">
+        Title="MainWindow" Height="376" Width="698"
+        WindowStartupLocation="CenterScreen">
     <Grid>
-        <Button x:Name="BtnGenerateKey" Content="Generar llave" Margin="290,140,290,150" Click="BtnGenerateKey_Click"/>
+        <Button x:Name="BtnGenerateKey" Content="Generate public key"  Click="BtnGenerateKey_Click" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="130" Height="35" VerticalAlignment="Top" Margin="26,26,0,0">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.111"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <TextBox x:Name="TxtPublicKey" Height="30" Width="462" Text="" TextWrapping="Wrap" HorizontalAlignment="Left" Margin="168,29,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="BtnGenerateSerial" Content="Generar serial" Height="38"  VerticalAlignment="Top" HorizontalAlignment="Left" Width="132" Margin="22,103,0,0" Click="BtnGenerateSerial_Click"/>
+        <TextBox x:Name="TxtSerial" Text="" TextWrapping="Wrap" HorizontalAlignment="Left" Width="462" Margin="168,103,0,0" Height="38" VerticalAlignment="Top"/>
+        <Button x:Name="BtnValidateSerial" Content="Validar serial" Margin="22,180,0,0" HorizontalAlignment="Left" Width="132" Height="39" VerticalAlignment="Top" Click="BtnValidateSerial_Click"/>
+        <TextBox x:Name="TxtValidateSerial" Margin="168,180,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="39" HorizontalAlignment="Left" Width="462"/>
 
     </Grid>
 </Window>

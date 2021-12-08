@@ -1,0 +1,8 @@
+C:\Repositories\SerialkeysGeneratorSystem\CryptoLibrary\bin\Debug\netstandard2.0\CryptoLibrary.deps.json
+C:\Repositories\SerialkeysGeneratorSystem\CryptoLibrary\bin\Debug\netstandard2.0\CryptoLibrary.dll
+C:\Repositories\SerialkeysGeneratorSystem\CryptoLibrary\bin\Debug\netstandard2.0\CryptoLibrary.pdb
+C:\Repositories\SerialkeysGeneratorSystem\CryptoLibrary\obj\Debug\netstandard2.0\CryptoLibrary.csproj.CoreCompileInputs.cache
+C:\Repositories\SerialkeysGeneratorSystem\CryptoLibrary\obj\Debug\netstandard2.0\CryptoLibrary.AssemblyInfoInputs.cache
+C:\Repositories\SerialkeysGeneratorSystem\CryptoLibrary\obj\Debug\netstandard2.0\CryptoLibrary.AssemblyInfo.cs
+C:\Repositories\SerialkeysGeneratorSystem\CryptoLibrary\obj\Debug\netstandard2.0\CryptoLibrary.dll
+C:\Repositories\SerialkeysGeneratorSystem\CryptoLibrary\obj\Debug\netstandard2.0\CryptoLibrary.pdb

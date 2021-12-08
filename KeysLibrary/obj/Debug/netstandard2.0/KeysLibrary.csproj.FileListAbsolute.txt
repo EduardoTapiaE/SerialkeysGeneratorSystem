@@ -6,4 +6,3 @@ C:\Repositories\SerialkeysGeneratorSystem\KeysLibrary\bin\Debug\netstandard2.0\K
 C:\Repositories\SerialkeysGeneratorSystem\KeysLibrary\obj\Debug\netstandard2.0\KeysLibrary.csproj.CoreCompileInputs.cache
 C:\Repositories\SerialkeysGeneratorSystem\KeysLibrary\obj\Debug\netstandard2.0\KeysLibrary.dll
 C:\Repositories\SerialkeysGeneratorSystem\KeysLibrary\obj\Debug\netstandard2.0\KeysLibrary.pdb
-C:\Repositories\SerialkeysGeneratorSystem\KeysLibrary\obj\Debug\netstandard2.0\KeysLibrary.csprojAssemblyReference.cache

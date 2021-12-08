@@ -11,6 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="CryptoLibrary">
+      <HintPath>..\CryptoLibrary\bin\Debug\netstandard2.0\CryptoLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="KeysLibrary">
       <HintPath>..\KeysLibrary\bin\Debug\netstandard2.0\KeysLibrary.dll</HintPath>
     </Reference>

@@ -9,6 +9,7 @@
       "SerialkeysGeneratorSystem/1.0.0": {
         "dependencies": {
           "System.Management": "6.0.0",
+          "CryptoLibrary": "1.0.0.0",
           "KeysLibrary": "1.0.0.0"
         },
         "runtime": {
@@ -106,6 +107,14 @@
           }
         }
       },
+      "CryptoLibrary/1.0.0.0": {
+        "runtime": {
+          "CryptoLibrary.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "KeysLibrary/1.0.0.0": {
         "runtime": {
           "KeysLibrary.dll": {
@@ -163,6 +172,11 @@
       "sha512": "sha512-t0MGLukB5WAVU9bO3MGzvlGnyJPgUlcwerXn1kzBRjwLKixT96XV0Uza41W49gVd8zEMFu9vQEFlv0IOrytICA==",
       "path": "system.security.principal.windows/5.0.0",
       "hashPath": "system.security.principal.windows.5.0.0.nupkg.sha512"
+    },
+    "CryptoLibrary/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     },
     "KeysLibrary/1.0.0.0": {
       "type": "reference",
