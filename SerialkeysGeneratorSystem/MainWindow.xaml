@@ -19,10 +19,12 @@
             </Button.RenderTransform>
         </Button>
         <TextBox x:Name="TxtPublicKey" Height="30" Width="462" Text="" TextWrapping="Wrap" HorizontalAlignment="Left" Margin="168,29,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="BtnGenerateSerial" Content="Generar serial" Height="38"  VerticalAlignment="Top" HorizontalAlignment="Left" Width="132" Margin="22,103,0,0" Click="BtnGenerateSerial_Click"/>
-        <TextBox x:Name="TxtSerial" Text="" TextWrapping="Wrap" HorizontalAlignment="Left" Width="462" Margin="168,103,0,0" Height="38" VerticalAlignment="Top"/>
-        <Button x:Name="BtnValidateSerial" Content="Validar serial" Margin="22,180,0,0" HorizontalAlignment="Left" Width="132" Height="39" VerticalAlignment="Top" Click="BtnValidateSerial_Click"/>
-        <TextBox x:Name="TxtValidateSerial" Margin="168,180,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="39" HorizontalAlignment="Left" Width="462"/>
+        <Button x:Name="BtnGenerateSerial" Content="Generar serial" Height="38"  VerticalAlignment="Top" HorizontalAlignment="Left" Width="132" Margin="22,129,0,0" Click="BtnGenerateSerial_Click"/>
+        <TextBox x:Name="TxtSerial" Text="" TextWrapping="Wrap" HorizontalAlignment="Left" Width="462" Margin="168,174,0,0" Height="38" VerticalAlignment="Top"/>
+        <Button x:Name="BtnValidateSerial" Content="Validar serial" Margin="22,251,0,0" HorizontalAlignment="Left" Width="132" Height="39" VerticalAlignment="Top" Click="BtnValidateSerial_Click"/>
+        <TextBox x:Name="TxtValidateSerial" Margin="168,251,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="39" HorizontalAlignment="Left" Width="462"/>
+        <TextBox HorizontalAlignment="Left" Margin="168,129,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="38"/>
+        <TextBox HorizontalAlignment="Left" Margin="318,129,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="38"/>
 
     </Grid>
 </Window>

@@ -1,6 +1,8 @@
 ﻿using CryptoLibrary;
 using KeysLibrary.Services;
+using Newtonsoft.Json;
 using SerialkeysGeneratorSystem.Helpers;
+using SerialkeysGeneratorSystem.Models;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -58,12 +60,24 @@ namespace SerialkeysGeneratorSystem
                 if (public_key == string.Empty)
                     throw new Exception("Debe generar la llave publica primero. ");
                 AES aes_crypto = new AES();
+                //EJEMPLO DE PRIVATE KEY. DEBE SER DE 16 CARACTERES.
                 aes_crypto.SetPrivateKey("ghdy65et73564gdt");
                 aes_crypto.SetPublicKey(public_key);
 
                 DateTime time_now = AppHelper.GetNetworkTime();
+                double expiration_in_days = 0.000694444;
+                DateTime expiration_date = time_now.AddDays(expiration_in_days);
 
-                var encrypted_data = aes_crypto.Encrypt("Hola mundo!");
+                SerialModel serial_data = new SerialModel() 
+                {
+                    CreateDate = time_now,
+                    PublicKey = public_key,
+                    Expiration = expiration_in_days,
+                    ExpirationDate = expiration_date
+                };
+
+                string json_serial_data = JsonConvert.SerializeObject(serial_data);
+                var encrypted_data = aes_crypto.Encrypt(json_serial_data);
                 TxtSerial.Text = encrypted_data;
             }
             catch(Exception ex)
@@ -79,16 +93,33 @@ namespace SerialkeysGeneratorSystem
                 IKeysServices keyService = new KeysServices();
                 var public_key = keyService.GeneratePublicKey();
                 AES aes_crypto = new AES();
+                //EJEMPLO DE PRIVATE KEY. DEBE SER DE 16 CARACTERES.
                 aes_crypto.SetPrivateKey("ghdy65et73564gdt");
                 aes_crypto.SetPublicKey(public_key);
                 var serial = TxtValidateSerial.Text;
                 var decrypted_data = aes_crypto.Decrypt(serial);
+                SerialModel serial_data = JsonConvert.DeserializeObject<SerialModel>(decrypted_data);
+                ValidateSerial(serial_data);
+
                 MessageBox.Show("Serial valido!");
             }
             catch(Exception ex)
             {
                 MessageBox.Show("Serial no valido!");
             }
+        }
+
+        private void ValidateSerial(SerialModel serial_data)
+        {
+            IKeysServices keyService = new KeysServices();
+            var public_key = keyService.GeneratePublicKey();
+            DateTime time_now = AppHelper.GetNetworkTime();
+
+            if (public_key != serial_data.PublicKey)
+                throw new Exception();
+            if (time_now > serial_data.ExpirationDate)
+                throw new Exception();
+
         }
     }
 }

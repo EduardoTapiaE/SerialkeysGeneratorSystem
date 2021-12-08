@@ -32,3 +32,4 @@ C:\Repositories\SerialkeysGeneratorSystem\SerialkeysGeneratorSystem\bin\Debug\ne
 C:\Repositories\SerialkeysGeneratorSystem\SerialkeysGeneratorSystem\obj\Debug\netcoreapp3.1\SerialkeysGeneratorSystem.csproj.CoreCompileInputs.cache
 C:\Repositories\SerialkeysGeneratorSystem\SerialkeysGeneratorSystem\bin\Debug\netcoreapp3.1\CryptoLibrary.dll
 C:\Repositories\SerialkeysGeneratorSystem\SerialkeysGeneratorSystem\bin\Debug\netcoreapp3.1\CryptoLibrary.pdb
+C:\Repositories\SerialkeysGeneratorSystem\SerialkeysGeneratorSystem\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
