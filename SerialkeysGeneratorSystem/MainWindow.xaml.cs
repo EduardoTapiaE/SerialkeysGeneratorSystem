@@ -27,6 +27,7 @@ namespace SerialkeysGeneratorSystem
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static string _privateKey = "";
         public MainWindow()
         {
             InitializeComponent();
@@ -61,7 +62,7 @@ namespace SerialkeysGeneratorSystem
                     throw new Exception("Debe generar la llave publica primero. ");
                 AES aes_crypto = new AES();
                 //EJEMPLO DE PRIVATE KEY. DEBE SER DE 16 CARACTERES.
-                aes_crypto.SetPrivateKey("ghdy65et73564gdt");
+                aes_crypto.SetPrivateKey(_privateKey);
                 aes_crypto.SetPublicKey(public_key);
 
                 DateTime time_now = AppHelper.GetNetworkTime();
@@ -94,7 +95,7 @@ namespace SerialkeysGeneratorSystem
                 var public_key = keyService.GeneratePublicKey();
                 AES aes_crypto = new AES();
                 //EJEMPLO DE PRIVATE KEY. DEBE SER DE 16 CARACTERES.
-                aes_crypto.SetPrivateKey("ghdy65et73564gdt");
+                aes_crypto.SetPrivateKey(_privateKey);
                 aes_crypto.SetPublicKey(public_key);
                 var serial = TxtValidateSerial.Text;
                 var decrypted_data = aes_crypto.Decrypt(serial);
